@@ -1,0 +1,66 @@
+{
+  "____comment": "This file was generated with Myfish. DO NOT EDIT.",
+  "version": "mychain::abi/1.5",
+  "contract_version": 1,
+  "contract_git_id": "merkle-proof-as",
+  "vm_type": "wasm",
+  "source_type": "AssemblyScript",
+  "compiler_version": "Myfish 1.0.0-beta.18",
+  "message": "",
+  "interfaces": [
+    {
+      "name": "Verify",
+      "type": "Verify"
+    },
+    {
+      "name": "Validate",
+      "type": "Validate"
+    },
+    {
+      "name": "GetAddress",
+      "type": "GetAddress"
+    }
+  ],
+  "structs": [
+    {
+      "name": "Verify",
+      "fields": [
+        {
+          "name": "proof",
+          "type": "string[]"
+        },
+        {
+          "name": "account",
+          "type": "string"
+        }
+      ],
+      "results": ["bool"]
+    },
+    {
+      "name": "Validate",
+      "fields": [
+        {
+          "name": "proof",
+          "type": "string[]"
+        },
+        {
+          "name": "account",
+          "type": "string"
+        }
+      ],
+      "results": ["string"]
+    },
+    {
+      "name": "GetAddress",
+      "fields": [
+        {
+          "name": "account",
+          "type": "string"
+        }
+      ],
+      "results": ["string"]
+    }
+  ],
+  "types": [],
+  "variants": []
+}
